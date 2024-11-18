@@ -1,3 +1,5 @@
+# Tabla Periódica CSS
+
 Manejando solo un tipo de atributo por color. De tal manera que permita cambiar el color de los grupos con un solo cambio de atributo en la sentencia.
 Usar la menor cantidad de selectores, clases y ID posibles.
 Procurar, no utilizar atributos STYLE para las etiquetas.
