@@ -1,0 +1,50 @@
+
+.casa{
+    width:350px;
+    height:280px;
+    background-color:gray ;
+    position:absolute;
+    bottom:435px;
+    left:41%;
+  }
+.tejado{
+    width:390px;
+    height:170px;
+    border-bottom: 100px solid red;
+    position:absolute;
+    left:40%;
+}
+.ventana1{
+    width:80px;
+    height:70px;
+    background-color:blue;
+    position:absolute;
+    bottom:170px;
+    left:7%;
+ }
+.ventana2{
+    width:80px;
+    height:70px;
+    background-color:blue;
+    position:absolute;
+    bottom:100px;
+    left:70%;
+}
+.puerta{
+    width:80px;
+    height:130px;
+    background-color:maroon ;
+    position:absolute;
+    bottom:0;
+    left:38%;
+}
+.pomo{
+    width:10px;
+    height:10px;
+    background-color:GoldenRod;
+    border-radius:50%;
+    position:absolute;
+    bottom:50px;
+    left:10%;
+}
+

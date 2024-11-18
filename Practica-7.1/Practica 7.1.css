@@ -1,0 +1,44 @@
+
+    table.table1 tr:nth-child(1) {
+        color: rgb(255, 255, 255);
+        background-color: rgb(32, 118, 199);
+    } 
+    
+        table.table1 tr:nth-child(even) {
+        background-color: rgba(28, 133, 175, 0.103)
+    }
+    
+    table.table1 tr:nth-child(9) {
+        color: rgb(0, 0, 0);
+        background-color: rgba(32, 118, 199, 0.267);
+    } 
+    
+    table.table1 td:hover { 
+        background-color: rgba(240, 140, 223, 0.39);
+    }
+
+
+
+    table.table2 th{
+        color: rgb(255, 255, 255);
+        background-color: rgba(40, 161, 111, 0.74);
+    }
+    
+    table.table2 tr:nth-child(even) {
+        background-color: rgba(168, 168, 168, 0.315)
+    }
+
+    table.table2 td, th {
+        border: 1px solid #999;
+        padding: 10px;
+        position: relative;
+    }
+        
+    table.table2 td:hover { 
+        background-color: rgb(240, 140, 223, 0.39);
+    }
+
+    table.sample th {
+        background-color: rgb(34, 90, 27);
+        color: white;
+    }

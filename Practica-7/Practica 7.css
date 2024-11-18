@@ -1,0 +1,44 @@
+@import url(http://127.0.0.1:5500/Practica%207/Practica%207.html);
+
+* {
+    box-sizing:border-box;
+  }
+
+    tr:nth-child(1) {
+        color: #fff;
+        background-color: rgb(46, 122, 124);
+    }  
+    tr:nth-child(even) {
+        background-color: rgba(33, 95, 146, 0.144)
+    }
+
+    td, th {
+        border: 1px solid #999;
+        padding: 10px;
+        position: relative;
+    }
+
+    td:hover::before { 
+        background-color: rgba(225, 255, 170, 0.705);
+        content: '';  
+        height: 100%;
+        left: -5000px;
+        position: absolute;  
+        top: 0;
+        width: 10000px;   
+        z-index: -2;        
+    }
+    td:hover::after { 
+        background-color: rgba(225, 255, 170, 0.705);
+        content: '';  
+        height: 10000px;    
+        left: 0;
+        position: absolute;  
+        top: -5000px;
+        width: 100%;
+        z-index: -1;        
+    }
+
+    table{
+        overflow: hidden;
+    }
