@@ -1,0 +1,89 @@
+/* Header */
+
+* {
+    box-sizing: border-box;
+}
+
+.header{
+    box-sizing: border-box;
+    position: absolute;
+    height: 130px;
+    left: 40%;
+    top: 0px;
+}
+
+img{
+    position: absolute;
+    width: 180px;
+}
+
+
+/*txt login*/
+p{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 0px;
+  
+}
+
+/*linea sup*/
+.lin1{
+position: absolute;
+width: 932px;
+height: 0px;
+left: 15%;
+top: 32%;
+border: 1px solid #747474;
+}
+
+ /*Line inf*/
+.lin2{
+position: absolute;
+width: 932px;
+height: 0px;
+left: 15%;
+top: 87%;
+border: 1px solid #747474;
+}
+
+/* Email y Contraseña*/
+.log{
+    position: absolute;
+    left: 20%;
+    top: 34%;
+    font-size: 20px;
+    
+}
+
+/* Btn Login */
+.btnlog{
+    position: absolute;
+    left: 40%;
+    top: 65%;
+}
+
+/* link olvidar contraseña*/
+.fpass{
+    position: absolute;
+    left: 43%;
+    top: 79%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+/* Btn crear*/
+.btncrear{
+    position: absolute;
+    left: 40%;
+    top: 88%;
+}

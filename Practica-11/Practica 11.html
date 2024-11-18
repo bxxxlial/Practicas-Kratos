@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+            * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            }
+
+            body {
+            margin: 5px 45px;
+            }
+
+            p {
+            margin: 5px;
+            }
+
+            img {
+            width: 200px;
+            height: 200px;
+            }
+
+            .header {
+            height: 150px;
+            }
+
+            .header h1 {
+            padding-top: 30px;
+            color: rgb(139, 56, 194);
+            height: 100px;
+            }
+
+            .nav {
+            height: 50px;
+            background-color: rgb(139, 56, 194);
+            border: 4px solid rgb(86, 175, 86);
+            list-style-type: none;
+            }
+
+            .nav a {
+            color: white;
+            font-size: larger;
+            margin: 0;
+            }
+
+            .nav ul {
+            padding: 0;
+            margin-left: 10px;
+            }
+
+            .nav li {
+            margin-top: 10px;
+            display: inline-block;
+            }
+
+            .column {
+            float: left;
+            }
+
+            .column.left {
+            width: 25%;
+            height: auto;
+            position: relative;
+            top: 12px;
+            }
+
+            #top {
+            background-color:  rgb(86, 175, 86);
+            border: 4px solid rgb(139, 56, 194);
+            height: auto;
+            padding: 10px;
+            color: WHITE;
+            }
+
+            #bottom {
+            padding: 10px;
+            position: relative;
+            top: 10px;
+            background-color: rgba(139, 56, 194, 0.781);
+            border: 4px dotted rgb(139, 56, 194);
+            border-width: 5px;
+            color: white;
+            height: auto;
+            }
+
+            #bottom h1 a {
+            color: rgb(86, 175, 86);
+            }
+
+            #bottom h3 a {
+            color: rgb(86, 175, 86);
+            }
+
+            .column.right {
+            padding: 10px 30px;
+            width: 74%;
+            overflow: hidden;
+            left: 1%;
+            height: auto;
+            position: relative;
+            top: 12px;
+            }
+
+            .column.right p {
+            position: relative;
+            }
+
+            .column.right img {
+            float: left;
+            margin-right: 20px;
+            }
+
+            .column.right h3 a {
+            color:rgb(139, 56, 194);
+            }
+
+            .column.right h1 {
+            color: rgb(139, 56, 194);
+            }
+
+            #right-top {
+            height: auto;
+            }
+
+            .first {
+            float: left;
+            width: 79%;
+            }
+
+            .last {
+            position: relative;
+            left: 40px;
+            float: left;
+            width: 20%;
+            height: auto;
+            border: 4px solid  rgb(139, 56, 194);
+            padding: 10px;
+            }
+
+            #style h1 {
+            color: white;
+            background-color: rgb(86, 175, 86);
+            }
+
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            padding: 0%;
+            }
+
+            .footer {
+            position: relative;
+            margin-top: 20px;
+            border: 4px solid  rgba(139, 56, 194, 0.781);
+            width: 100%;
+            height: 50px;
+            background-color: rgb(86, 175, 86);
+            list-style-type: none;
+            padding-top: 10px;
+            }
+
+            .footer ul {
+            padding: 0;
+            margin-left: 10px;
+            }
+
+            .footer li {
+            margin-top: 10px;
+            display: inline-block;
+            }
+
+            .buscar {
+            float: left;
+            width: 80%;
+            }
+
+            #buscar {
+            position: relative;
+            float: left;
+            padding-top: 10px;
+            color: aliceblue;
+            }
+
+            .copy {
+            float: left;
+            width: 80%;
+            }
+
+            #copy {
+            position: relative;
+            float: left;
+            left: 180px;
+            }
+
+            @media screen and (max-width: 1200px) {
+            .column.left, .column.right {
+            width: 100%;
+            height: auto;
+            }
+
+            .first {
+            width: 100%;
+            }
+
+            .last {
+            width: 100%;
+            left: 0;
+            }
+
+            #right-top {
+            width: 100%;
+
+            }
+
+            #right-bottom {
+            width: 100%;
+            }
+
+            }
+
+    </style>
+
+
+</head>
+<body>
+        <div class="header">
+            <h1>NEON GENESIS EVANGELION</h1>
+            <div class="nav">
+                <div class="buscar">
+                    <ul>
+                        <li><a href="#">SHINJI</a></li>
+                        <li><a href="#">SUBE</a></li>
+                        <li><a href="#">AL</a></li>
+                        <li><a href="#">MALDITO</a></li>
+                        <li><a href="#">ROBOT!!!</a></li>
+                    </ul>
+                </div>
+                <div id="buscar">
+                    <p>buscar <input type="text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="column left">
+            <div id="top">
+                <h1><a href="#">Verdades Absolutas</a></h1>
+                <p><a href="#">MISATO BESTO WAIFU DE EVANGELION</a></p>
+                <p><a href="#">JODER, KAJI ES LITERALMENTE YO</a></p>
+                <p><a href="#">EL KANISALES SE LA COME</a></p>
+                <h1><a href="#">Personajes</a></h1>
+                <p>Shinji Ikari </p>
+                <p><a href="#">(碇 シンジ Ikari Shinji)</a></p>
+                <p>Misato Katsuragi</p>
+                <p><a href="#">(葛城 ミサト Katsuragi Misato)</a></p>
+                <p>Asuka Langley Sōryū</p>
+                <p><a href="#"> (惣流・アスカ・ラングレー Sōryū Asuka Rangure)</a></p>
+                <p>Rei Ayanami</p>
+                <p><a href="">(綾波 レイ Ayanami Rei)</a></p>
+                <p>Kaworu Nagisa</p>
+                <p><a href="#"> (渚 カヲル Nagisa Kaworu)</a></p>
+            </div>
+            <div id="bottom">
+                <h1><a href="#">Final</a></h1>
+                <p>Hacia los últimos episodios, los personajes comienzan a entender que el auténtico plan de NERV es el llamado Proyecto de Complementación Humana, 
+                    con el cual pretenden eliminar la individualidad humana y fusionar a toda la humanidad en un mismo ser para poner fin a todos los conflictos, 
+                    la soledad y el dolor provocados por la existencia individual. NERV y SEELE entran en conflicto por la ejecución del proyecto. Una vez iniciado 
+                    el Proyecto, el cuarteto protagonista, Shinji, Misato, Rei y Asuka se ven obligados a hacer frente a sus dudas y temores y examinar su valor. 
+                    Este final se hizo a base de flashbacks, visiones, textos parpadeantes y un montaje de imágenes sombrías, que incluyen lúgubres fotografías en blanco 
+                    y negro de desolados motivos urbanos. También se muestra una vida alternativa con los mismos personajes, que entraría en un género de comedia juvenil. 
+                    Cuando con el tiempo Shinji se da cuenta de que vale la pena vivir y que no hay necesidad de ser un piloto de EVA para justificar su existencia, es rodeado 
+                    por la mayoría de los personajes aplaudiendo y felicitándolo. Después de estas escenas, Shinji concluye sus reflexiones y despide la serie.
+                </p>
+                <p>
+                    El ambiguo y poco claro sentido de los dos últimos episodios dejó a muchos fanes confusos e insatisfechos. Estos episodios fueron los más controvertidos de 
+                    una ya de por sí polémica serie. calificados por muchos de imperfectos e incompletos. Sin embargo, Anno y el subdirector Kazuya Tsurumaki defendieron 
+                    la integridad artística del final. Si bien en la película The End of Evangelion se muestra un final diferente, que complementa al de la serie.
+                </p>
+                <h3><a href="#">Seguir leyendo...</a></h3>
+            </div>
+          </div>
+          <div class="column right">
+            <div class="first">
+                <div id="right-top">
+                    <h1>¿Qué es Neon Genesis Evangelion?</h1><br>
+                    <img src="Misato.jpg">
+                    <p>Neon Genesis Evangelion (新世紀エヴァンゲリオン Shin Seiki Evangerion?), también conocida simplemente como Evangelion, o Eva, es una serie de anime 
+                        creada por el estudio Gainax y animada por Tatsunoko Production, dirigida por Hideaki Anno. La historia de la obra se da lugar en un mundo 
+                        futurista en el que una organización paramilitar llamada NERV protege a la humanidad de los ataques de seres de origen y naturaleza desconocidos, 
+                        los «Ángeles», utilizando para ello bio mechas humanoides llamados Evangelion (acortado a EVA). A medida que avanza la trama, esta se vuelve 
+                        paulatinamente más confusa y psicológica, en donde las personalidades de los personajes se hacen cada vez más inestables 
+                        y su desarrollo se torna fundamental. Hideaki Anno, el director y guionista, ha expresado que el desarrollo de la serie estuvo 
+                        inspirado en su propia experiencia, en virtud de la cual los personajes muestran una amplia gama de sus afecciones emocionales y de su personalidad.
+                    </p><br>
+                        <p>El anime cuenta con veintiséis episodios que fueron transmitidos por primera vez entre octubre de 1995 y marzo de 1996. Debido a la fama obtenida, 
+                        pronto se fueron creando diversos spin-offs, entre los que se incluyen series de manga, películas y videojuegos que complementan u ofrecen una 
+                        realidad alternativa de la historia. A pesar de que el anime constituye la obra original, el manga creado por Yoshiyuki Sadamoto se comenzó a 
+                        publicar anterior al estreno de la animación para aumentar el interés del público. Sadamoto afirma que el manga es su propia interpretación de 
+                        Evangelion, mientras que el anime es la interpretación de Anno.
+                        </p><br>
+                        <h3><a href="#">Seguir leyendo...</a></h3>
+                </div>
+                <br>
+                <div id="Right-bottom">
+                    <h1>Argumento</h1>
+                    <img src="shinji.jpg">
+                    <p>La serie se inicia en el año 2015 de la era cristiana, quince años después del primer y desastroso contacto con unos misteriosos seres
+                        conocidos como ángeles, que resultó en un cataclismo a escala mundial llamado Segundo Impacto, que redujo a la mitad la población humana 
+                        en la Tierra. Para prevenir futuros ataques de ángeles, la ONU estableció en Tokio-3 la organización NERV, la cual desarrolló una serie 
+                        de gigantes biomecánicos llamados Evangelion —abreviado EVA— para combatirlos. Debido a que los Evangelion solo pueden ser pilotados por 
+                        adolescentes, el dirigente de NERV, Gendō Ikari, se comunica con su distanciado hijo, Shinji, para que pilote la Unidad 01 de los 
+                        Evangelion, y acabe con el Tercer Ángel, que se halla atacando la ciudad. Aunque al principio Shinji se niega a cooperar, acaba 
+                        accediendo al ver el acto aparentemente cruel de su padre de obligar a la malherida Rei Ayanami a pilotar el EVA. A bordo del Evangelion, 
+                        Shinji es dejado inconsciente al poco tiempo de comenzar la batalla, pero súbitamente el EVA actúa por sí mismo y destruye al ángel. Tras 
+                        eso, Shinji se adapta a su nueva vida en Tokio-3, viviendo con la capitana Misato Katsuragi como su tutora. En la escuela de la ciudad 
+                        conoce a los que serán sus mejores amigos, Tōji Suzuhara, Kensuke Aida y Hikari Horaki, así como a la enigmática Rei Ayanami, piloto de la 
+                        Unidad 00. Poco después, ella y Shinji se encargan de derrotar a los siguientes ángeles, Shamshel y Ramiel, objetivos que consiguen con 
+                        grandes dificultades</p><br>
+                    <p>Con el transcurrir de la serie, Misato lleva a Shinji, Tōji y Kensuke a un convoy naval encargado de transportar la Unidad 02, pilotada por 
+                        Sōryū Asuka Langley. En un inesperado combate, el ángel Gaghiel ataca a la flota, pero es destruido por Shinji y Asuka a bordo de la Unidad 
+                        02. Al mismo tiempo, se revela que la auténtica carga del convoy es el embrión del ángel Adán, transportado por un viejo amigo de Misato 
+                        llamado Ryōji Kaji. Poco después, Asuka se muda a casa de Misato, encontrando dificultades en la convivencia entre ella y Shinji; no obstante, 
+                        ambos superan sus diferencias para derrotar juntos al ángel Israfel. Posteriormente Shinji, Asuka y Rei hacen frente y derrotan a los 
+                        ángeles Sandalphon, Matarael, Sahaquiel, Iruel, Leliel, con grandes peligros en cada uno de ellos que llevan al límite la resistencia 
+                        psicológica de los pilotos. Más tarde, la Unidad 03 es enviada a Tokio-3, siendo Tōji Suzuhara el encargado de pilotarla, pero el Evangelion 
+                        es poseído por el ángel Bardiel y Shinji se ve obligado a enfrentarse a él. Ante la negativa de Shinji de luchar, Gendō Ikari activa un método
+                         de teledirección de Evangelion llamado Dummy Plug y destroza a su oponente, casi matando a Tōji en el proceso. Después de la batalla Shinji 
+                         decide dejar definitivamente NERV, pero el ángel Zeruel llega y derrota a Asuka y Rei, lo que ocasiona que Shinji vuelva, después de hablar 
+                         con Kaji, para pilotar la unidad 01 y atacar al ángel. En el transcurso del combate, el EVA agota su energía y entra en Modo Berserker, 
+                         despedazando y devorando al ángel, y provocando que Shinji quede reducido a LCL; pero poco más tarde el joven Ikari interactúa con el 
+                         espíritu de su madre, dentro del Evangelion, y renace del líquido. Después de que Kaji sea asesinado tras rescatar al vicecomandante de 
+                         NERV, Kōzō Fuyutsuki, de las manos de SEELE, aparece el ángel Arael, el cual ataca la mente de Asuka y le provoca una fuerte depresión 
+                         clínica que le impide seguir pilotando. A su vez, Rei muere destruyendo al ángel Armisael, pero es sustituida por un clon. 
+                         Posteriormente, un joven misterioso llamado Kaworu Nagisa llega para pilotar la unidad Evangelion 02 en reemplazo de Asuka. Shinji 
+                         forja una fuerte relación con él, pero Kaworu resulta ser Tabris, el último ángel en ser esperado, y Shinji se ve obligado a matarlo para 
+                         impedir que provoque el Tercer Impacto.
+                        </p><br>
+                    <h3><a href="#">Seguir leyendo...</a></h3>
+                </div>
+            </div>
+            <div class="last" id="style">
+                <h1>Origen del nombre</h1>
+                <p>El título japonés de la serie, Shin Seiki Evangerion (新世紀エヴァンゲリオン?), consta de dos partes: 
+                    «Shin Seiki» (新世紀 lit. "Nueva era" o "Nuevo siglo"?) y «Evangelion», del griego clásico εὐαγγέλιον (buen mensajero, buena nueva), 
+                    hispanizado como evangelio. Evangelion etimológicamente no tiene relación con la palabra hebrea eva (viviente). Con todo, el título 
+                    Neon Genesis Evangelion significa «Mensajero del nuevo comienzo». Anno consideró su connotación cristiana de presunta bendición y eligió 
+                    ese nombre porque le parecía «complicado». Un primer título pensado para la serie fue Alcion (Arushion en japonés), pero este fue rechazado 
+                    por su falta de consonantes duras, por lo que Yoshiyuki Sadamoto y Anno acabaron confirmando Evangelion.</p>
+                <p><a href="#">Seguir leyendo...</a></p><br>
+                <h1>Inspiracion</h1>
+                <p>Evangelion está lleno de alusiones a la maternidad, a la biología, los conceptos militares, religiosos y psicológicos, así como numerosos 
+                    homenajes y referencias a otras series de anime. Por ejemplo, la trama básica de esta obra se había visto en otras, como en Space Battleship 
+                    Yamato,n. Una tendencia que le valió el apodo de «anime remixado».n. Esta tendencia de Anno ha sido criticada como plagio. No obstante, 
+                    Anno se ha defendido negando la posibilidad de crear una obra enteramente original sin referencias a otra:</p>
+                <p><a href="#">Seguir leyendo...</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+            <div class="copy">
+                <ul>
+                    <li><a href="#">No | </a></li>
+                    <li><a href="#">Se | </a></li>
+                    <li><a href="#">Que | </a></li>
+                    <li><a href="#">Poner | </a></li>
+                    <li><a href="#">Aquí | </a></li>
+                    <li><a href="#">xdxd</a></li>
+                </ul>
+            </div>
+            <p id="copy">© Copyright Te amo, Asuka.</p>
+        </div>
+      </body>
+    </html>
+
+</body>
+</html>

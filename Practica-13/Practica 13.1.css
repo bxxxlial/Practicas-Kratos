@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    'bloque1 bloque2 bloque2'
+    'bloque1 bloque3 bloque4'
+    'bloque1 bloque5 bloque5';
+    column-gap: 30px;
+    row-gap: 20px;
+    background-color: gray;
+    grid-template-columns: 49% 24% 24%;
+    grid-template-rows: 150px 150px 150px;
+    padding: 40px;
+    justify-content: center;
+    align-content: center;
+}
+.container div {
+    background-color: rgb(0, 255, 191);
+}
+.box1 {
+    grid-area: bloque1;
+    display: grid;
+    background-color: rgb(0, 255, 191);
+    align-items: flex-end;
+}
+.box1 h1 {
+    font-size: 5rem;
+    color: gray;
+    margin: 0;
+}
+.box2 {
+    grid-area: bloque2;
+}
+.box3 {
+    grid-area: bloque3;
+}
+.box4 {
+    grid-area: bloque4;
+}
+.box5 {
+    grid-area: bloque5;
+}

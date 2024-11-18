@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    'uno dos dos'
+    'uno tres cuatroA'
+    'uno tres cuatroB';
+    background-color: gray;
+    grid-template-columns: 49% 24% 24%;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 25px;
+    grid-template-rows: 150px 150px 150px;
+}
+.container div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.box1 {
+    grid-area: uno;
+    background-color: rgba(255, 0, 0, 0.61);
+}
+.box2 {
+    grid-area: dos;
+    background-color: rgba(50, 205, 50, 0.568);
+}
+.box3 {
+    grid-area: tres;
+    background-color: rgba(255, 192, 203, 0.836);
+}
+.box4 {
+    grid-area: cuatroA;
+    background-color: rgba(0, 0, 255, 0.507);
+}
+.box4b {
+    grid-area: cuatroB;
+    background-color: rgba(0, 0, 255, 0.507);
